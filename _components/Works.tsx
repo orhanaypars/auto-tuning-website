@@ -31,7 +31,7 @@ const works = [
 function Works() {
   return (
     <section className="w-full max-w-6xl mx-auto py-16 px-4 md:px-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 my-10 text-right drop-shadow-lg">
+      <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 my-10 text-right drop-shadow-lg relative underline underline-offset-8 decoration-amber-700">
         Yaptığımız İşler & Alınan Ödüller
       </h2>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

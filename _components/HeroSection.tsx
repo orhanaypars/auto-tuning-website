@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-4 md:px-8 min-h-screen max-w-6xl mx-auto mt-16">
+    <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-4 md:px-8 min-h-screen max-w-6xl mx-auto mt-16 ">
       {/* Left: Text */}
       <motion.div
         className="flex-1 flex flex-col items-start justify-center text-center md:text-left mb-8 md:mb-0"
@@ -64,41 +64,49 @@ function HeroSection() {
           }}
           className="relative"
         >
-          {/* Şık bir arka plan efekti */}
           <div className="absolute inset-0 flex items-center justify-center z-0">
             <div className="rounded-full bg-yellow-400/30 blur-2xl w-60 h-60 md:w-96 md:h-96 animate-pulse" />
-            {/* Ses dalgaları efekti */}
-            <div className="absolute left-4 top-4 z-20">
+
+            <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
               <motion.span
-                className="block rounded-full border-2 border-yellow-400/70"
-                style={{ width: 32, height: 32 }}
-                animate={{ scale: [1, 1.4, 1], opacity: [0.7, 0.2, 0.7] }}
+                className="absolute rounded-full border-2 border-yellow-400/70"
+                style={{ width: "100%", height: "100%" }}
+                animate={{
+                  scale: [1, 1.18, 0.95, 1.12, 1],
+                  opacity: [0.7, 0.3, 0.15, 0.3, 0.7],
+                }}
                 transition={{
-                  duration: 1.6,
+                  duration: 1.1,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
               />
               <motion.span
-                className="block rounded-full border-2 border-yellow-300/50 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                style={{ width: 48, height: 48 }}
-                animate={{ scale: [1, 1.7, 1], opacity: [0.5, 0.1, 0.5] }}
+                className="absolute rounded-full border-2 border-yellow-300/50"
+                style={{ width: "130%", height: "130%" }}
+                animate={{
+                  scale: [1, 1.25, 0.92, 1.15, 1],
+                  opacity: [0.5, 0.18, 0.08, 0.18, 0.5],
+                }}
                 transition={{
-                  duration: 2.2,
+                  duration: 1.5,
                   repeat: Infinity,
                   ease: "easeInOut",
-                  delay: 0.5,
+                  delay: 0.3,
                 }}
               />
               <motion.span
-                className="block rounded-full border-2 border-yellow-200/30 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                style={{ width: 64, height: 64 }}
-                animate={{ scale: [1, 2, 1], opacity: [0.3, 0.05, 0.3] }}
+                className="absolute rounded-full border-2 border-yellow-200/30"
+                style={{ width: "150%", height: "150%" }}
+                animate={{
+                  scale: [1, 1.32, 0.9, 1.13, 1],
+                  opacity: [0.3, 0.09, 0.03, 0.09, 0.3],
+                }}
                 transition={{
-                  duration: 2.8,
+                  duration: 1.9,
                   repeat: Infinity,
                   ease: "easeInOut",
-                  delay: 1,
+                  delay: 0.6,
                 }}
               />
             </div>

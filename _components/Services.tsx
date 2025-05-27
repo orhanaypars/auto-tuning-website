@@ -46,7 +46,7 @@ function Services() {
   return (
     <section className="w-full max-w-6xl mx-auto py-16 px-4 md:px-8">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-yellow-500 mb-10 text-left drop-shadow-lg"
+        className="text-3xl md:text-4xl font-bold text-yellow-500 mb-10 text-left drop-shadow-lg underline underline-offset-8 decoration-amber-700"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

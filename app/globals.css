@@ -120,3 +120,35 @@
     @apply bg-background text-foreground;
   }
 }
+.animated-bg {
+  background: linear-gradient(
+    120deg,
+    #232526,
+    #414345,
+    #232526,
+    #18181b,
+    #232526,
+    #232526,
+    #232526
+  );
+  background-size: 200% 200%;
+  animation: gradientMoveDark 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes gradientMoveDark {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,4 +1,6 @@
 import AboutUs from "@/_components/AboutUs";
+import ContactPage from "@/_components/ContactPage";
+import FavQuestionPage from "@/_components/FavQuestionPage";
 import HeroSection from "@/_components/HeroSection";
 import Products from "@/_components/Products";
 import Referances from "@/_components/Referances";
@@ -14,6 +16,8 @@ export default function Home() {
       <Products />
       <Referances />
       <Works />
+      <FavQuestionPage />
+      <ContactPage />
     </div>
   );
 }

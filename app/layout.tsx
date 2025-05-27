@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body className="bg-black text-yellow-500">
+      <body className="animated-bg text-yellow-500">
         <div className="min-h-screen">
           <Banner />
           <div className="relative z-20">

@@ -39,13 +39,13 @@ function Products() {
   return (
     <section className="w-full max-w-6xl mx-auto py-16 px-4 md:px-8">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-yellow-500 mb-10 text-right drop-shadow-lg"
+        className="text-3xl md:text-4xl font-bold text-yellow-500 mb-10 text-right drop-shadow-lg underline underline-offset-8 decoration-amber-700"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, type: "spring" }}
       >
-        Ürünlerimiz
+        Stoktaki Ürünler
       </motion.h2>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product, i) => (
@@ -62,7 +62,7 @@ function Products() {
             }}
           >
             {/* Sol üstte indirim etiketi */}
-            <span className="absolute left-4 top-4 inline-block bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse shadow-lg">
+            <span className="absolute left-4 top-4 inline-block bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse shadow-lg">
               %37 İndirim
             </span>
             <motion.div

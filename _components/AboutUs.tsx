@@ -6,7 +6,7 @@ function AboutUs() {
   return (
     <section className="w-full max-w-4xl mx-auto py-16 px-4 md:px-8 text-right">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-yellow-500 mb-6 drop-shadow-lg"
+        className="text-3xl md:text-4xl font-bold text-yellow-500 mb-6 drop-shadow-lg underline underline-offset-8 decoration-amber-700"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, type: "spring" }}

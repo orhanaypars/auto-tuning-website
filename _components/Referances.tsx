@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+
 const brands = [
   {
     name: "Pioneer",
@@ -37,8 +38,9 @@ const brands = [
 function Referances() {
   return (
     <section className="w-full max-w-6xl mx-auto py-12 px-2 md:px-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 my-10 text-left drop-shadow-lg">
+      <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 my-10 text-left drop-shadow-lg underline underline-offset-8 decoration-amber-700">
         İş Birliklerimiz & Referanslarımız
+
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-10 items-center justify-center ">
         {brands.map((brand) => (
