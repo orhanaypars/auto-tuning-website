@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactPage() {
   return (
-    <section className="w-full">
+    <section className="w-full min-h-screen">
       <div className="flex flex-col lg:flex-row lg:gap-8 max-w-6xl mx-auto py-12 px-4 md:px-8">
         {/* Sol: Bilgilendirme ve Sosyal Medya */}
         <div className="flex-1 min-w-0 mb-10 lg:mb-0 flex flex-col justify-center">

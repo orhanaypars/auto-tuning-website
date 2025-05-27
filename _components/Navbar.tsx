@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { HoveredLink, Menu, MenuItem } from "../component/ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { Button } from "@/component/ui/button";
 
 export function NavbarDemo() {
   return (
@@ -79,6 +80,9 @@ function Navbar({ className }: { className?: string }) {
             </div>
           </MenuItem>
         </Menu>
+      </div>
+      <div>
+        <Button>Biz sizi arayalım</Button>
       </div>
     </div>
   );

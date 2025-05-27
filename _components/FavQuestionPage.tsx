@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const faq = [
   {
     question: "Chip tuning nedir ve aracıma ne gibi faydalar sağlar?",
@@ -36,13 +35,12 @@ const faq = [
 
 function FavQuestionPage() {
   return (
-    <section className="w-full">
+    <section className="w-full min-h-screen">
       <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto py-12 px-2 md:px-8">
         {/* SSS Sol */}
         <div className="flex-1 min-w-0">
           <h1 className="text-2xl md:text-3xl font-bold text-yellow-500 mb-6 text-center lg:text-left drop-shadow-lg underline underline-offset-8 decoration-amber-700">
             Sık Sorulan Sorular (SSS)
-
           </h1>
 
           <div className="space-y-4">

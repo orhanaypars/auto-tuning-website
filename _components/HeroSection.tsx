@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-4 md:px-8 min-h-screen max-w-6xl mx-auto mt-16 ">
+    <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 px-4 md:px-8 min-h-screen max-w-6xl mx-auto mt-16  ">
       {/* Left: Text */}
       <motion.div
         className="flex-1 flex flex-col items-start justify-center text-center md:text-left mb-8 md:mb-0"
